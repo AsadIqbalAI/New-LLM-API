@@ -33,6 +33,11 @@ class ChatAPIApp:
     def get_available_models(self):
         return {"object": "list", "data": AVAILABLE_MODELS_DICTS}
 
+    @app.get("/health")
+    async def health_check(self):
+        """Health check endpoint"""
+        return {"status": "OK"}
+
     def extract_api_key(
         credentials: HTTPAuthorizationCredentials = Depends(
             HTTPBearer(auto_error=False)
