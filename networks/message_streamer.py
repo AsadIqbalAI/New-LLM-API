@@ -110,7 +110,7 @@ class MessageStreamer:
             "options": {
                 "use_cache": use_cache,
             },
-            "stream": True,
+            "stream": False,
         }
 
         if self.model in STOP_SEQUENCES_MAP.keys():
