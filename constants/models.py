@@ -38,14 +38,6 @@ AVAILABLE_MODELS = [
 # https://platform.openai.com/docs/api-reference/models/list
 AVAILABLE_MODELS_DICTS = [
     {
-        "Token_Limits":"Listed Below"
-        "mixtral-8x7b": 32768,
-        "nous-mixtral-8x7b": 32768,
-        "mistral-7b": 32768,
-        "openchat-3.5": 8192,
-        "gemma-7b": 8192,
-    },
-    {
         "object": "model",
         "id": "mixtral-8x7b",
         "description": "[mistralai/Mixtral-8x7B-Instruct-v0.1]: https://huggingface.co/mistralai/Mixtral-8x7B-Instruct-v0.1",
