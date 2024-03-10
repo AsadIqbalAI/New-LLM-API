@@ -21,17 +21,6 @@ from constants.models import AVAILABLE_MODELS_DICTS
 
 
 class ChatAPIApp:
-    
-        @app.get("/health")
-    async def health_check(self):
-        """Health check endpoint"""
-        return {"status": "OK"}
-    
-@app.get("/health")
-async def health_check(self):
-    """Health check endpoint"""
-    return {"status": "OK"}
-        
     def __init__(self):
         self.app = FastAPI(
             docs_url="/",
